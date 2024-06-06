@@ -1,0 +1,73 @@
+*.rbc
+capybara-*.html
+.rspec
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-[0-9]*
+*.orig
+rerun.txt
+pickle-email-*.html
+
+# Ignore all logfiles and tempfiles.
+rails-api-stimulus/log/*
+spa-stimulus/log/*
+rails-api-stimulus/tmp/*
+spa-stimulus/tmp/*
+!/rails-api-stimulus/log/.keep
+!/spa-stimulus/log/.keep
+!/rails-api-stimulus/tmp/.keep
+!/spa-stimulus/tmp/.keep
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+secret_token.rb
+master.key
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv, dotenv-rails
+# TODO Comment out these rules if environment variables can be committed
+.env
+.env*.local
+
+## Environment normalization:
+.bundle
+bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+bower_components
+*.bowerrc
+bower.json
+
+# Ignore pow environment settings
+.powenv
+
+# Ignore Byebug command history file.
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+packs
+packs-test
+assets
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore uploaded files in development
+rails-api-stimulus/storage/*
+!rails-api-stimulus/storage/.keep
+spa-stimulus/storage/*
+!spa-stimulus/storage/.keep
+rails-api-stimulus/public/uploads
+spa-stimulus/public/uploads
